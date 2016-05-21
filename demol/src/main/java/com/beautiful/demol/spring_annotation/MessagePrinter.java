@@ -1,4 +1,4 @@
-package spring_annotation;
+package com.beautiful.demol.spring_annotation;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

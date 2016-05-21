@@ -1,4 +1,4 @@
-package spring_annotation;
+package com.beautiful.demol.spring_annotation;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
