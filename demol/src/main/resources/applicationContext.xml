@@ -1,11 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context" 
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
-	http://www.springframework.org/schema/beans/spring-beans.xsd">
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean id="helloBean" class="com.beautiful.demol.spring_xml.HelloWorld">
+	
+	<!-- 组件扫描 -->
+	<!-- 在Spring2.5中，有4种类型的组件自动扫描注释类型
+		@Component – 指示自动扫描组件。
+		@Repository – 表示在持久层DAO组件。
+		@Service – 表示在业务层服务组件。
+		@Controller – 表示在表示层控制器组件。 -->
+	<context:component-scan base-package="com.beautiful.demol.spring_xml" ></context:component-scan>
+
+	
+	<!-- <bean id="helloBean" class="com.beautiful.demol.spring_xml.HelloWorld">
 		<property name="name" value="Yiibai" />
 	</bean>
+	
+	<bean id="csvOutputGenerator" class="com.beautiful.demol.spring_xml.CsvOutputGenerator">
+	</bean>
+	
+	<bean id="jsonOutputGenerator" class="com.beautiful.demol.spring_xml.JsonOutputGenerator">
+	</bean>
+	
+	<bean id="outputHelper" class="com.beautiful.demol.spring_xml.OutputHelper">
+		<property name="outputGenerator" ref="jsonOutputGenerator"></property>
+	</bean> -->
 	
 </beans>
