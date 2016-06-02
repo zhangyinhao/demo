@@ -28,7 +28,8 @@
 	设置密码：>mysqladmin -uroot password "135246"
 	登录：>mysql -u root -p
 	
-	
+五：客户端
+	Navicat 11.0.10
 	
 	
 	
